@@ -46,6 +46,14 @@ export default class Updown {
 		return this.get('https://updown.io/api/checks');
 	}
 
+	
+	/**
+	 * Gets a check 
+	 */
+	public async getCheck(token : string) {
+		return this.get('https://updown.io/api/checks/${token}');
+	}
+	
 	/**
 	 * Gets downtime information about a specific check
 	 *
